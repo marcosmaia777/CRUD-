@@ -1,8 +1,31 @@
-header{
+h1{
     background: blue;
     text-align: center;
-    padding: 25px;
-    font-size: 40px;
+    padding: 20px;
+    font-size: 30px;
     font-weight: bolder;
     text-transform: uppercase;
+}
+
+button{
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px;
+    margin: 50px;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    
+}
+
+button:hover {
+    background-color: #4CAF50; 
+    color: white;
+}
+
+td, th{
+    font-size: 18px;
+    padding: 20px;
+    font-weight: bolder;
+    
 }
