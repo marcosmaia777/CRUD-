@@ -1,11 +1,10 @@
 h1{
-    background: blue;
+    background: green;
     text-align: center;
     padding: 20px;
     font-size: 30px;
     font-weight: bolder;
-    text-transform: uppercase;
-}
+    text-transform: uppercase;}
 
 button{
     display: inline-block;
@@ -13,19 +12,14 @@ button{
     padding: 10px;
     margin: 50px;
     border-radius: 10px;
-    background-color: blue;
-    color: white;
-    
-}
+    background-color: green;
+    color: white;}
 
 button:hover {
     background-color: #4CAF50; 
-    color: white;
-}
+    color: white;}
 
 td, th{
     font-size: 18px;
     padding: 20px;
-    font-weight: bolder;
-    
-}
+    font-weight: bolder;}
