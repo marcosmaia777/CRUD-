@@ -1,25 +1,8 @@
-h1{
-    background: green;
+.cabeçalho{
+    background: #4169E1;
     text-align: center;
-    padding: 20px;
-    font-size: 30px;
+    font-size: 33px;
     font-weight: bolder;
-    text-transform: uppercase;}
-
-button{
-    display: inline-block;
-    font-size: 20px;
-    padding: 10px;
-    margin: 50px;
-    border-radius: 10px;
-    background-color: green;
-    color: white;}
-
-button:hover {
-    background-color: #4CAF50; 
-    color: white;}
-
-td, th{
-    font-size: 18px;
     padding: 20px;
-    font-weight: bolder;}
+    text-transform: uppercase;
+    color: white;}
