@@ -5,23 +5,18 @@
     font-size: 12px;
     font-weight: bolder;
     text-transform: uppercase;
-    cursor: pointer;
-}
-
+    cursor: pointer;}
 .botao-editar{
     background-color:#87CEFA;
     text-transform: capitalize;
     font-size: 18px;
     border: none;
     padding: 2px;
-    cursor: pointer;
-}
-
+    cursor: pointer;}
 .botao-excluir{
     background-color: red;
     text-transform: capitalize;
     font-size: 18px;
     border: none;
     padding: 2px;
-    cursor: pointer;
-}
+    cursor: pointer;}
