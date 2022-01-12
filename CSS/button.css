@@ -6,17 +6,34 @@
     font-weight: bolder;
     text-transform: uppercase;
     cursor: pointer;}
+
+.botao-cadastrar:hover{
+    transform: scale(1.1);
+}
+
 .botao-editar{
     background-color:#87CEFA;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 16px;
     border: none;
-    padding: 2px;
-    cursor: pointer;}
+    padding: 7px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.botao-editar:hover{
+    transform: scale(1.1);
+}
 .botao-excluir{
     background-color: red;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 16px;
     border: none;
-    padding: 2px;
-    cursor: pointer;}
+    padding: 7px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.botao-excluir:hover{
+    transform: scale(1.1);
+}
+
+

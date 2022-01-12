@@ -12,7 +12,6 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: 'karla', sans-serif;
     position:relative;}
 header{
     background-color: var(--primary-color);

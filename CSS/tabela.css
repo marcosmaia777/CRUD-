@@ -1,18 +1,16 @@
 .tabela{
-    width: 100%;
-    text-align: left;
-}
-.tabela th{
-    height: 50px;
-    font-weight: bolder;
-    text-transform: uppercase;
-    padding: 20px;
-    text-align: center;
-}
-.tabela td{
-    height: 50px;
-    padding: 20px;
-    text-align: center;
+    margin: 50px;
 }
 
-    
+th{
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+td{
+    padding: 20px;
+    font-size: 20px;
+  
+}
+
