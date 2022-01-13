@@ -1,39 +1,30 @@
 .botao-cadastrar{
-    background-color: #87CEFA;
-    padding: 14px;
-    border-style: none;
-    font-size: 12px;
-    font-weight: bolder;
+    padding: 11px;
+    font-size: 13px;
+    margin: 70px;
     text-transform: uppercase;
-    cursor: pointer;}
-
-.botao-cadastrar:hover{
-    transform: scale(1.1);
+    background-color: #00CED1;
+    cursor: pointer;
+    border: none;
 }
+
 
 .botao-editar{
-    background-color:#87CEFA;
-    text-transform: uppercase;
-    font-size: 16px;
+    background-color:yellow;
     border: none;
-    padding: 7px;
+    padding: 11px;
+    margin-left: 12px;
+    font-size: 13px;
+    text-transform: uppercase;
     cursor: pointer;
-    margin-right: 5px;
 }
-.botao-editar:hover{
-    transform: scale(1.1);
-}
+
 .botao-excluir{
     background-color: red;
-    text-transform: uppercase;
-    font-size: 16px;
     border: none;
-    padding: 7px;
+    padding: 11px;
+    margin-left: 12px;
+    font-size: 13px;
+    text-transform: uppercase;
     cursor: pointer;
-    margin-left: 5px;
 }
-.botao-excluir:hover{
-    transform: scale(1.1);
-}
-
-

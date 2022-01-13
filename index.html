@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="PT">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,61 +8,42 @@
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/button.css">
     <link rel="stylesheet" href="CSS/tabela.css">
-    <link rel="stylesheet" href="CSS/modal.css">
-    <link rel="stylesheet" href="JavaScript/main.js">
-    
-    <title>CRUD</title>
+    <title>Document</title>
 </head>
 <body>
     <header>
-            <h1>Cadastro de clientes</h1>
+        <h1>Cadastro de clientes</h1>
     </header>
     <main>
-        <button type="button" class="botao-cadastrar" id="cadastrarCliente">Cadastrar Cliente</button>   
-        <table class="tabela">
+        <button class="botao-cadastrar">Cadastrar clientes</button>
+    
+    <div>
+        <table>
             <thead>
-                <tr>
-                    <th>nome</th>
+                <tr class=>
+                    <th>nome completo</th>
+                    <th>CPF</th>
+                    <th>Cidade</th>
+                    <th>telefone</th>
                     <th>email</th>
-                    <th>celular</th>
-                    <th>cidade</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Marcos</td>
+                    <td>Marcos Maia Fidelis</td>
+                    <td>000-000-000-00</td>
+                    <td>Jaboatão</td>
+                    <td>(81) 9 00000000</td>
                     <td>marcosmaiafidelis777@outlook.com</td>
-                    <td>81998240579</td>
-                    <td>Recife</td>
                     <td>
-                        <button type="button" class="botao-editar">Editar</button>
-                        <button type="button" class="botao-excluir">Excluir</button>
+                        <button class="botao-editar">Editar</button>
+                        <button class="botao-excluir">Excluir</button>
                     </td>
-                    </tr>
-                    <tr>
-                        <td>Alice</td>
-                        <td>alicesantos@outlook.com</td>
-                        <td>8195359876</td>
-                        <td>Rio de Janeiro</td>
-                        <td>
-                            <button type="button" class="botao-editar">Editar</button>
-                            <button type="button" class="botao-excluir">Excluir</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Maria</td>
-                        <td>mariajose@gmail.com</td>
-                        <td>8197240479</td>
-                        <td>São paulo</td>
-                        <td>
-                            <button type="button" class="botao-editar">editar</button>
-                            <button type="button" class="botao-excluir">Excluir</button>
-                        </td>
-                    </tr>
-             </tbody>
+                </tr>
+            </tbody>
         </table>
-        
-        <footer>
-       </footer>
+    </div>
+</main>
+   
 </body>
 </html>
