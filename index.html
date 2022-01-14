@@ -44,28 +44,33 @@
         </table>
     </div>
             <div class="novo-cadastro">
+                <div class="novoCadastro-content">
+                    <div class="novoCadastro-header">
             <header class="descricao-novoCadastro">
                  <h2>Novo cadastro</h2>
+                 <span class="novoCadastro-close" id="novoCadastro-Close">&#10006;</span>
             </header>
-              
+               
+        
             <div>
             <label>Nome</label>
-              <input class="input" type="text">
+              <input class="input" type="text" required placeholder="Marcos Maia">
 
               <label>CPF</label>
-              <input class="input" type="number">
+              <input class="input" type="number" required placeholder="000-000-000-00">
 
               <label>cidade</label>
-              <input class="input" type="text">
+              <input class="input" type="text" required placeholder="Recife">
 
               <label>Telefone</label>
-              <input class="input"  type="tel">
+              <input class="input"  type="tel" required placeholder="(xx) xxxxx-xxxx">
 
               <label>email</label>
-              <input class="input" type="email">
+              <input class="input" type="email" required placeholder="seuemail@dominio.com">
 
               <button type="button" class="botao-finalizar">Finalizar</button>
             </div>
+            
 </main>
    
 </body>
