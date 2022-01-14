@@ -47,3 +47,19 @@
     color: white;
     font-weight: bolder;
 }
+
+.botao-finalizar{
+    cursor: pointer;
+    background-color:#00CED1;
+    border: none;
+    padding: 2px;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+.botao-finalizar:hover{
+    background-color: blue;
+    transform: scale(1.1);
+    font-weight: bolder;
+    color: white;
+}

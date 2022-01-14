@@ -21,16 +21,19 @@ input{
     display: block;
     width:200px;
     height: 30px;
+    margin: 10px;
 }
 
 label{
     font-weight: bolder;
     text-transform: uppercase;
+  
 }
 
 .descricao-novoCadastro{
     text-align: center;
     text-transform: uppercase;
     font-weight: bolder;
+    margin: 10px;
 }
 
