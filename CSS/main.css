@@ -3,22 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 body{
     display: flex;
     flex-direction: column;
     position: relative;
 }
-
-h1{
-    text-align: center;
-    font-size: 30px;
-    font-weight: bolder;
-    text-transform: uppercase;
-    background-color:#00CED1;
-    padding: 20px;
-}
-
 main{
     flex-grow: 1;
     display: flex;
@@ -29,3 +18,12 @@ main{
     padding: 50px;
     gap: 20px
 }
+h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    background-color:#00CED1;
+    padding: 20px;
+}
+
