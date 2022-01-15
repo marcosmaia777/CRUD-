@@ -1,25 +1,32 @@
 .botao-cadastrar{
-    border-style: none;
+    border: none;
+    border-radius: 10px;
     height: 40px;
     padding: 6px 12px;
     background-color: #00CED1;
     color: black;
-    font-size: 15px;
+    font-size: 12px;
     cursor: pointer;
     transition: box-shadow .6s ease;
+    text-transform: uppercase;
+    font-weight: bolder;
 }
 .botao-cadastrar:hover{
-    background-color:#0ec1c4;
+    background-color:#0675b6;
     text-transform:uppercase;
     font-weight: bolder;
+    font-size: 13px;
+    color: white;
 }
 
 .botao-editar{
     background-color: yellow;
     border: none;
     padding: 17px;
-    font-size: 15px;
+    font-size: 11px;
     text-transform: uppercase;
+    border-radius: 10px;
+    font-weight: bolder;
 }
 
 .botao-editar:hover{
@@ -28,14 +35,17 @@
     text-transform: uppercase;
     cursor: pointer;
     color: white;
+    font-size: 12px;
 }
 
 .botao-excluir{
     background-color:red;
     border: none;
     padding: 17px;
-    font-size: 15px;
+    font-size: 11px;
     text-transform: uppercase;
+    border-radius: 10px;
+    font-weight: bolder;
 }
 
 .botao-excluir:hover{
@@ -44,6 +54,7 @@
     text-transform: uppercase;
     cursor: pointer;
     color: white;
+    font-size: 12px;
 }
 
 .button.blue{
