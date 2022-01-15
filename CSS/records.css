@@ -21,7 +21,7 @@
     text-align: center;
 }
 .records tr:hover{
-    background-color:#0675b6;
+    background-color:#DCDCDC;
 }
 @media(max-width:480px){
     .records{
