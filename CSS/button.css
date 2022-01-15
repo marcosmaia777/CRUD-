@@ -1,12 +1,49 @@
-.button{
+.botao-cadastrar{
     border-style: none;
     height: 40px;
     padding: 6px 12px;
-    background-color: black;
-    color: white;
-    font-size: 1rem;
+    background-color: #00CED1;
+    color: black;
+    font-size: 15px;
     cursor: pointer;
     transition: box-shadow .6s ease;
+}
+.botao-cadastrar:hover{
+    background-color:#0ec1c4;
+    text-transform:uppercase;
+    font-weight: bolder;
+}
+
+.botao-editar{
+    background-color: yellow;
+    border: none;
+    padding: 17px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.botao-editar:hover{
+    background-color: rgb(196, 167, 7);
+    font-weight: bolder;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+}
+
+.botao-excluir{
+    background-color:red;
+    border: none;
+    padding: 17px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.botao-excluir:hover{
+    background-color: rgb(148, 1, 1);
+    font-weight: bolder;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
 }
 
 .button.blue{
@@ -21,9 +58,8 @@ button.red{
     background-color: #FF4949;
 }
 
-.button:hover{
-    box-shadow: inset 200px 0 0 #00000055;
-}
+
+
 
 @media(max-width:480px){
     .button.mobile{
