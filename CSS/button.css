@@ -18,7 +18,6 @@
     font-size: 13px;
     color: white;
 }
-
 .botao-editar{
     background-color: yellow;
     border: none;
@@ -28,16 +27,14 @@
     border-radius: 10px;
     font-weight: bolder;
 }
-
 .botao-editar:hover{
     background-color: rgb(196, 167, 7);
     font-weight: bolder;
     text-transform: uppercase;
     cursor: pointer;
     color: white;
-    font-size: 12px;
+    font-size: 13px;
 }
-
 .botao-excluir{
     background-color:red;
     border: none;
@@ -47,7 +44,6 @@
     border-radius: 10px;
     font-weight: bolder;
 }
-
 .botao-excluir:hover{
     background-color: rgb(148, 1, 1);
     font-weight: bolder;
@@ -56,22 +52,41 @@
     color: white;
     font-size: 12px;
 }
-
-.button.blue{
+.botao-salvar{
     background-color: #1FB6FF;
+    border:none;
+    padding: 17px;
+    font-size: 11px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-weight: bolder;
 }
-
-button.green{
+.botao-salvar:hover{
+    background-color:#0675b6;
+    text-transform:uppercase;
+    font-weight: bolder;
+    font-size: 13px;
+    color: white;    
+}
+.botao-cancelar{
     background-color: #13CE66;
+    border: none;
+    padding: 17px;
+    font-size: 11px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-weight: bolder;
 }
-
+.botao-cancelar:hover{
+    background-color:green;
+    text-transform:uppercase;
+    font-weight: bolder;
+    font-size: 13px;
+    color: white;     
+}
 button.red{
     background-color: #FF4949;
 }
-
-
-
-
 @media(max-width:480px){
     .button.mobile{
         color:transparent;

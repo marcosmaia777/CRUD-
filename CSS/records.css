@@ -3,7 +3,6 @@
     user-select: none;
     text-align: left;
 }
-
 .records th{
     height: 50px;
     background-color: #00CED1;
@@ -11,24 +10,19 @@
     font-size: 1.2rem;
     text-transform: uppercase;
 }
-
-
 .records td{
     height: 50px;
     padding-left: 20px;
 }
-
 .records th:last-child,
 .records td:last-child{
     padding: 0;
     min-width: 140px;
     text-align: center;
 }
-
 .records tr:hover{
     background-color:#0675b6;
 }
-
 @media(max-width:480px){
     .records{
         border-spacing: 5px;
@@ -44,11 +38,9 @@
         justify-content: space-between;
         padding: 0 20px;
     }
-
     .records td{
         margin:10px 0;
     }
-
     .records tr:hover{
         background-color: inherit;
     }

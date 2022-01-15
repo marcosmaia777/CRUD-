@@ -10,14 +10,14 @@ body{
     position:relative;
 }
 main{
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 90%;
-        margin: 5vh auto;
-        padding: 50px;
-        gap: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    margin: 5vh auto;
+    padding: 50px;
+    gap: 20px;
 }
 header{
     background-color:#00CED1;
@@ -28,17 +28,14 @@ header{
 header:hover{
     background-color: #0675b6;
 }
-
 .header-title{   
-        color: black;
-        font-size: 2rem;
-        text-transform: uppercase;
+    color: black;
+    font-size: 2rem;
+    text-transform: uppercase;
 }
-
 .header-title:hover{
     color: white;
 }
-
 footer{
     width:100;
     text-align: center;
