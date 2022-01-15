@@ -30,9 +30,6 @@
     .records thead{
         display:none;
     }
-    .records tr{
-        box-shadow: 0 1px 3px var(--shadow-color);
-    }
     .records td:not(:first-child){
         display:flex;
         justify-content: space-between;
