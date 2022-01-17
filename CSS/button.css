@@ -66,7 +66,8 @@
     text-transform:uppercase;
     font-weight: bolder;
     font-size: 13px;
-    color: white;    
+    color: white;  
+    cursor: pointer;  
 }
 .botao-cancelar{
     background-color: #13CE66;
@@ -82,7 +83,8 @@
     text-transform:uppercase;
     font-weight: bolder;
     font-size: 13px;
-    color: white;     
+    color: white;   
+    cursor: pointer;  
 }
 button.red{
     background-color: #FF4949;
