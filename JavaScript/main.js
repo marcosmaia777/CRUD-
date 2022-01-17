@@ -6,20 +6,20 @@ const closeModal = () => document.getElementById('modal')
     .classList.remove('active')
 
 const tempClient = {
-    nome: "Marcos Maia",
+    nome: "Marcos",
     email: "marcosmaiafidelis777@outlook.com",
     celular: "81998240579",
-    cidade: "Recife"
+    cidade: "Jaboatão"
 }
 
 // CRUD create read update delete
 const createClient = (client) => {
-    localStorage.setItem ('db_client', JSON.stringify(client))
+    const db_client = JSON.parse(localStorage.getItem('db_client'))
+    db_client.push (client)
+    localStorage.setItem("db_client", JSON.stringify(client))
 }
 
-
-
-    // eventos
+// eventos
     document.getElementById('cadastrarCliente')
     .addEventListener('click', openModal)
 document.getElementById('modalClose')
