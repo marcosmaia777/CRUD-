@@ -6,17 +6,15 @@ const closeModal = () => document.getElementById('modal')
     .classList.remove('active')
 
 const tempClient = {
-    nome: "Alice",
+    nome: "Marcos",
     email: "marcosmaiafidelis777@outlook.com",
     celular: "81998240579",
-    cidade: "Jaboatão"
+    cidade: "Recife"
 }
 
 // CRUD create read update delete
 const createClient = (client) => {
-    const db_client = JSON.parse(localStorage.getItem('db_client'))
-    db_client.push(client)
-    localStorage.setItem("db_client",JSON.stringify(client))
+    localStorage.setItem("db_client" , JSON.stringify(client))
 }
 
 // eventos
