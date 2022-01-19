@@ -43,9 +43,26 @@ const isValiFields = () => {
 
 //interação com o layout 
 const saveClient = () => {
-    if (isValiFields()) {
-        console.log("Cadastrando Cliente")
+    
+    if (isValidFields()) {
+        const client = {
+            nome: document.getElementById('nome').value,
+            email: document.getElementById('email').value,
+            celular: document.getElementById('celular').value,
+            cidade: document.getElementById('cidade').value
+        }
+        const index = document.getElementById('nome').dataset.index
+        if (index == 'new') {
+            createClient(client)
+            updateTable()
+            closeModal()
+        } else {
+            updateClient(index, client)
+            updateTable()
+            closeModal()
+        }
     }
+}
   
     
 // eventos
