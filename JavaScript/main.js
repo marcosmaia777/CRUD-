@@ -37,8 +37,23 @@ const createClient = (client) => {
     setlocalStorage(dbClient)
 }
 
+const isValiFields = () => {
+    return document.getElementById('form').reportValidity()
+}
+
+//interação com o layout 
+const saveClient = () => {
+    if (isValiFields()) {
+        console.log('Cadastrando Clientes')
+    }
+}
+
 // eventos
-    document.getElementById('cadastrarCliente')
+document.getElementById('cadastrarCliente')
     .addEventListener('click', openModal)
+
 document.getElementById('modalClose')
     .addEventListener('click', closeModal)
+
+document.getElementById('salvar')
+    .addEventListener('click' , saveClient)
