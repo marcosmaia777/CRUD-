@@ -44,10 +44,10 @@ const isValiFields = () => {
 //interação com o layout 
 const saveClient = () => {
     if (isValiFields()) {
-        console.log('Cadastrando Clientes')
+        console.log("Cadastrando Cliente")
     }
-}
-
+  
+    
 // eventos
 document.getElementById('cadastrarCliente')
     .addEventListener('click', openModal)
