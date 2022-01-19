@@ -16,6 +16,9 @@ const tempClient = {
  const setlocalStorage = (dbClient) => localStorage.setItem("db_client" , JSON.stringify(dbClient))
 
 // CRUD create read update delete
+
+const readClient = () => localStorage()
+
 const createClient = (client) => {
     const dbClient = getlocalStorage()
     dbClient.push (client)
