@@ -17,6 +17,12 @@ const tempClient = {
 
 // CRUD create read update delete
 
+const deleteClient = (index) => {
+    const dbClient = readClient()
+    dbClient.splice(index,1)
+    setlocalStorage(dbClient)
+}
+
 const updateClient = (index , client) => {
     const dbClient = readClient()
     dbClient [index] = client
