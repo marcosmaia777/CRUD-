@@ -51,6 +51,7 @@ const saveClient = () => {
             celular: document.getElementById("celular").value,
             cidade: document.getElementById("cidade").value
         }
+        createClient(client)
     }
 }
     
