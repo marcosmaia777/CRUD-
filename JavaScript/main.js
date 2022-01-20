@@ -7,14 +7,7 @@ const closeModal = () =>{
     document.getElementById('modal').classList.remove('active')
 } 
 
-const tempClient = {
-    nome: "Magda",
-    email: "magda@outlook.com",
-    celular: "81998240579",
-    cidade: "Recife"
-}
-
- const getlocalStorage = () => JSON.parse(localStorage.getItem("db_client")) ?? []
+const getlocalStorage = () => JSON.parse(localStorage.getItem("db_client")) ?? []
  const setlocalStorage = (dbClient) => localStorage.setItem("db_client" , JSON.stringify(dbClient))
 
 // CRUD create read update delete
@@ -30,9 +23,9 @@ const updateClient = (index , client) => {
     setlocalStorage(dbClient)
 }
 
-const readClient = () => getlocalStorage()
+const readClient = () => getlocalStorage() //ler
 
-const createClient = (client) => {
+const createClient = (client) => {  //Criar
     const dbClient = getlocalStorage()
     dbClient.push (client)
     setlocalStorage(dbClient)
@@ -43,7 +36,8 @@ const isValiFields = () => {
     return document.getElementById('form').reportValidity() // reportValidity retorna se todos os requisistos do html estiver verdadeiro
 }
 
-const clearFields = () =>{
+// fechar janela
+const clearFields = () =>{  
     const fields = document.querySelectorAll('.modal-field')
     fields.forEach(field => fields.value = "")
 }
@@ -60,6 +54,27 @@ const saveClient = () => {
         closeModal()
     }
 }
+
+const creatRow = (client) => {  //tabela
+    const newRow = document.createElement('tr')
+    newRow.innerHTML =  `
+        td>${client.nome}</td>
+        <td>${client.email}</td>
+        <td>${client.celular}</td>
+        <td>${client.cidade}</td>
+        <td>
+            <button type="button" class="botao-editar" id="botaoEditar">Editar</button>
+            <button type="button" class="botao-excluir" id="botaoEcluir">Excluir</button>
+        </td>
+    
+    `
+}
+
+const updateTable = () => {
+    const dbClient = readClient()
+    dbClient.forEach(creatRow)
+}
+
     // eventos
 document.getElementById('cadastrarCliente')
     .addEventListener('click', openModal)
