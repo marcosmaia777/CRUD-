@@ -2,8 +2,10 @@
 
 const openModal = () => document.getElementById('modal')
     .classList.add('active')
-const closeModal = () => document.getElementById('modal')
-    .classList.remove('active')
+const closeModal = () =>{
+    clearFields()
+    document.getElementById('modal').classList.remove('active')
+} 
 
 const tempClient = {
     nome: "Magda",
@@ -16,7 +18,6 @@ const tempClient = {
  const setlocalStorage = (dbClient) => localStorage.setItem("db_client" , JSON.stringify(dbClient))
 
 // CRUD create read update delete
-
 const deleteClient = (index) => {
     const dbClient = readClient()
     dbClient.splice(index,1)
@@ -42,20 +43,24 @@ const isValiFields = () => {
     return document.getElementById('form').reportValidity() // reportValidity retorna se todos os requisistos do html estiver verdadeiro
 }
 
+const clearFields = () =>{
+    const fields = document.querySelectorAll('.modal-field')
+    fields.forEach(field => fields.value = "")
+}
 //interação com o layout 
 const saveClient = () => {
-    if (isValiFields()) {  //se estiver correto
-        const client = {
+    if (isValiFields()) {  //verifica se os campos são válidos
+        const client = { //novo cliente
             nome: document.getElementById("nome").value,
             email: document.getElementById("email").value,
             celular: document.getElementById("celular").value,
             cidade: document.getElementById("cidade").value
         }
-        createClient(client)
+        createClient(client) //Criação de novo cliente, envia p localStorage
+        closeModal()
     }
 }
-    
-// eventos
+    // eventos
 document.getElementById('cadastrarCliente')
     .addEventListener('click', openModal)
 
