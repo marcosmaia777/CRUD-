@@ -82,14 +82,27 @@ const updateTable = () => {
     dbClient.forEach(creatRow)
 }
 
+const fillFields = (client) => {
+    document.getElementById('nome').value = client.nome
+    document.getElementById('email').value = client.email
+    document.getElementById('celular').value = client.celular
+    document.getElementById('cidade').value = client.cidade
+}
+
+const editClient = (index) => {
+    const client = readClient [index]
+    fillFields(client)
+    openModal()
+}
+
 const editDelete = (event) => {
     if(event.target.type == 'button') {
         
         const [action , index] = event.target.id.split('-')
         if(action == 'edit'){
-            console.log("Editando o cliente")
-        }else{
-            console.log("Excluindo cliente")
+            editClient(index)
+        } else{
+            console.log("Deletando")
         }
     }
 }
