@@ -58,7 +58,7 @@ const saveClient = () => {
 const creatRow = (client) => {  //tabela
     const newRow = document.createElement('tr')
     newRow.innerHTML =  `
-        td>${client.nome}</td>
+        <td>${client.nome}</td>
         <td>${client.email}</td>
         <td>${client.celular}</td>
         <td>${client.cidade}</td>
@@ -66,16 +66,17 @@ const creatRow = (client) => {  //tabela
             <button type="button" class="botao-editar" id="botaoEditar">Editar</button>
             <button type="button" class="botao-excluir" id="botaoEcluir">Excluir</button>
         </td>
-    
     `
+    document.querySelector('#tableClient>tbody').appendChild(newRow)
 }
-
-document.querySelector('#tableClient>tbody').appendChild(newRow)
 
 const updateTable = () => {
     const dbClient = readClient()
+    clearTable()
     dbClient.forEach(creatRow)
 }
+
+updateTable()
 
     // eventos
 document.getElementById('cadastrarCliente')
