@@ -65,7 +65,7 @@ const creatRow = (client) => {  //tabela
         <td>${client.cidade}</td>
         <td>
             <button type="button" class="botao-editar" id="botaoEditar">Editar</button>
-            <button type="button" class="botao-excluir" id="botaoEcluir">Excluir</button>
+            <button type="button" class="botao-excluir" id="botaoExluir">Excluir</button>
         </td>
     `
     document.querySelector('#tableClient>tbody').appendChild(newRow)
@@ -82,6 +82,12 @@ const updateTable = () => {
     dbClient.forEach(creatRow)
 }
 
+const editDelete = (event) => {
+    if(event.target.type == 'button') {
+        console.log(event.target.id)
+    }
+}
+
 updateTable()
 
     // eventos
@@ -93,3 +99,6 @@ document.getElementById('modalClose')
 
 document.getElementById('salvar')
     .addEventListener('click' , saveClient)
+
+document.querySelector('#tableClient>tbody')
+    .addEventListener('click', editDelete)
