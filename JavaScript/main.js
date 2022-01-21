@@ -70,6 +70,8 @@ const creatRow = (client) => {  //tabela
     `
 }
 
+document.querySelector('#tableClient>tbody').appendChild(newRow)
+
 const updateTable = () => {
     const dbClient = readClient()
     dbClient.forEach(creatRow)
