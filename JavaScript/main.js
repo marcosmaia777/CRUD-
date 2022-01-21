@@ -51,6 +51,7 @@ const saveClient = () => {
             cidade: document.getElementById("cidade").value
         }
         createClient(client) //Criação de novo cliente, envia p localStorage
+        updateTable()
         closeModal()
     }
 }
@@ -68,6 +69,11 @@ const creatRow = (client) => {  //tabela
         </td>
     `
     document.querySelector('#tableClient>tbody').appendChild(newRow)
+}
+
+const clearTable = () => {
+    const rows = document.querySelectorAll('#tableClient>tbody tr')
+    rows.forEach(row => row.parentNode.removeChild(row))
 }
 
 const updateTable = () => {
