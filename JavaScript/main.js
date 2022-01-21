@@ -56,7 +56,7 @@ const saveClient = () => {
     }
 }
 
-const creatRow = (client) => {  //tabela
+const creatRow = (client , index) => {  //tabela
     const newRow = document.createElement('tr')
     newRow.innerHTML =  `
         <td>${client.nome}</td>
@@ -64,8 +64,8 @@ const creatRow = (client) => {  //tabela
         <td>${client.celular}</td>
         <td>${client.cidade}</td>
         <td>
-            <button type="button" class="botao-editar" id="botaoEditar">Editar</button>
-            <button type="button" class="botao-excluir" id="botaoExluir">Excluir</button>
+            <button type="button" class="botao-editar" id="botaoEditar${index}">Editar</button>
+            <button type="button" class="botao-excluir" id="botaoExluir${index}">Excluir</button>
         </td>
     `
     document.querySelector('#tableClient>tbody').appendChild(newRow)
