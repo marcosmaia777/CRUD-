@@ -64,8 +64,8 @@ const creatRow = (client , index) => {  //tabela
         <td>${client.celular}</td>
         <td>${client.cidade}</td>
         <td>
-            <button type="button" class="botao-editar" id="botaoEditar${index}">Editar</button>
-            <button type="button" class="botao-excluir" id="botaoExluir${index}">Excluir</button>
+            <button type="button" class="botao-editar" data-action="edit">Editar</button>
+            <button type="button" class="botao-excluir" data-action="delete">Excluir</button>
         </td>
     `
     document.querySelector('#tableClient>tbody').appendChild(newRow)
@@ -97,7 +97,7 @@ const editClient = (index) => {
 
 const editDelete = (event) => {
     if (event.target.type == 'button') {
-        console.log(event.target.type)
+        console.log(event.target.dataset.action)
     }
 }
     
