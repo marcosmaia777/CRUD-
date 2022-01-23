@@ -96,8 +96,11 @@ const editClient = (index) => {
 }
 
 const editDelete = (event) => {
-    console.log(event.target) 
+    if (event.target.type == 'button') {
+        console.log(event.target.type)
+    }
 }
+    
         
 
 updateTable()
