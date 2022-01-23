@@ -97,7 +97,7 @@ const editClient = (index) => {
 
 const editDelete = (event) => {
     if (event.target.type == 'button') {
-        console.log(event.target.id)
+        console.log(event.target.id.split('-'))
     }
 }
     
