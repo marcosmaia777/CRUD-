@@ -50,9 +50,15 @@ const saveClient = () => {
             celular: document.getElementById("celular").value,
             cidade: document.getElementById("cidade").value
         }
-        createClient(client) //Criação de novo cliente, envia p localStorage
-        updateTable()
-        closeModal()
+        const index = document.getElementById("nome").dataset.index
+        if(index == 'new') {
+            createClient(client) //Criação de novo cliente, envia p localStorage
+            updateTable()
+            closeModal()
+        } else{
+            console.log("Editando")
+        }
+        
     }
 }
 
@@ -83,10 +89,10 @@ const updateTable = () => {
 }
 
 const fillFields = (client) => {
-    document.getElementById('nome').value = client.nome
-    document.getElementById('email').value = client.email
-    document.getElementById('celular').value = client.celular
-    document.getElementById('cidade').value = client.cidade
+    document.getElementById("nome").value = client.nome
+    document.getElementById("email").value = client.email
+    document.getElementById("celular").value = client.celular
+    document.getElementById("cidade").value = client.cidade
 }
 
 const editClient = (index) => {
