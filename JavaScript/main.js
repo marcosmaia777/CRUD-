@@ -56,7 +56,9 @@ const saveClient = () => {
             updateTable()
             closeModal()
         } else{
-            console.log("Editando")
+            updateClient(index, client)
+            updateTable()
+            closeModal()
         }
         
     }
@@ -93,10 +95,12 @@ const fillFields = (client) => {
     document.getElementById("email").value = client.email
     document.getElementById("celular").value = client.celular
     document.getElementById("cidade").value = client.cidade
+    document.getElementById("nome").dataset.index = client.new
 }
 
 const editClient = (index) => {
     const client = readClient [index]
+    client.index = index 
     fillFields(client)
     openModal()
 }
@@ -106,12 +110,21 @@ const editDelete = (event) => {
         const [action,index] = event.target.id.split('-')
         
         if(action == "edit"){
-            console.log("Editando cliente")
+            editClient(index)
         }else{
-            console.log("Deletando cliente")
+            const client = readClient() [index]
+            const response  = confirme (`Deseja realmente excluir?`)
+            if(response){
+                deleteClient(index)
+                updateTable()
+            
+
+            }
         }
+            
     }
 }
+
 
 updateTable()
 
