@@ -9,10 +9,12 @@
     padding-left: 20px;
     font-size: 1.2rem;
     text-transform: uppercase;
+    text-align: center;
 }
 .records td{
     height: 50px;
     padding-left: 20px;
+    text-align: center;
 }
 .records th:last-child,
 .records td:last-child{
@@ -21,7 +23,7 @@
     text-align: center;
 }
 .records tr:hover{
-    background-color:#DCDCDC;
+    background-color:rgb(231, 223, 223);
 }
 @media(max-width:480px){
     .records{
