@@ -3,28 +3,41 @@
     height: 40px;
     padding: 6px 12px;
     background-color: #00CED1;
-    color: white;
+    color: black;
     font-size: 1rem;
     cursor: pointer;
-    transition: box-shadow .6s ease;
+   border-radius: 10px;
 }
-
-.button.blue{
-    background-color: #1FB6FF;
-}
-
 button.green{
     background-color: #13CE66;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
 }
-
 button.red{
-    background-color: #FF4949;
+    background-color: #f32929;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
 }
-
-.button:hover{
-    background-color:#0675b6;
+.button-salvar{
+    background: #00CED1;
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+    padding: 10px;
+    color: black;
+    border-radius: 10px;
 }
-
+.button-cancelar{
+    background: yellow;
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+    padding: 10px;
+    color: black;
+    border-radius: 10px;
+}
 @media(max-width:480px){
     .button.mobile{
         color:transparent;
