@@ -21,7 +21,7 @@ button.red{
     color: black;
 }
 .button-salvar{
-    background: #00CED1;
+    background:#13CE66;
     cursor: pointer;
     font-size: 1rem;
     border: none;
@@ -30,7 +30,7 @@ button.red{
     border-radius: 10px;
 }
 .button-cancelar{
-    background: yellow;
+    background: #00CED1;
     cursor: pointer;
     font-size: 1rem;
     border: none;
